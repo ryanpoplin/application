@@ -13,30 +13,62 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+        <style type="text/css">
+        /* testing styles... */
+        .warning {
+            background-color: #e0e0e0;
+        }
+        </style>
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
-        <div class="hero-unit">
-          <h1>'Allo, 'Allo!</h1>
-          <p>You now have</p>
-          <ul>
-            <li>HTML5 Boilerplate</li>
-
-
-          </ul>
-        </div>
-
-
+        <header class="main-header">
+            <div class="container">
+                <hgroup>  
+                    <h1>Investment Calculator</h1>
+                    <h2>An Open Source Production</h2>
+                </hgroup>
+            </div> <!-- .container ends -->
+        </header> <!-- .main-header ends -->
+        <section class="main-section">
+            <div class="container">
+                <div class="user-input-area">
+                    <h3>Investment Fields:</h3>
+                    <form class="user-form">
+                        <label>Rate ( .00 ):</label>
+                        <input type="text" id="init-rate" class="user-input">
+                        <label>Years:</label>
+                        <input type="text" id="init-years" class="user-input">
+                        <label>Amount:</label>
+                        <input type="text" id="init-amount" class="user-input">
+                    </form>
+                    <input type="submit" id="submit-btn" class="submit-button">
+                </div> <!-- .user-input-area ends -->
+                <aside class="output-area">
+                    <h3>Investment Information:</h3>
+                    <label>Investment Months:</label>
+                    <span id="get-months" class="user-output"></span>
+                    <label>Total Investment Amount:</label>
+                    <span id="get-total-interest" class="user-output"></span>
+                    <label>Yearly Investment Amount:</label>
+                    <span id="get-yearly-interest" class="user-output"></span>
+                    <label>Monthly Investment Amount:</label>
+                    <span id="get-monthly-interest" class="user-output"></span>
+                </aside> <!-- .output-area ends -->
+            </div> <!-- .container ends -->
+        </section> <!-- .main-section ends -->
+        <footer class="main-footer">
+            <div class="container">
+                <p>Investment Calculator | 2013</p>
+            </div> <!-- .container ends -->
+        </footer> <!-- .main-footer ends -->        
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -46,11 +78,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-
         <!-- build:js(.tmp) scripts/coffee.js -->
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->

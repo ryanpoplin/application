@@ -2,33 +2,33 @@
 
     var initRate, initYears, initAmount, userInput = [], terms;
     $( document ).ready( function () { 
-        $( "#submitBtn" ).click( function () {
-            initRate = $( "#initRate" ).val();
+        $( "#submit-btn" ).click( function () {
+            initRate = $( "#init-rate" ).val();
             if ( isNaN( initRate ) || initRate === "" ) {
-                $( "#initRate" ).addClass( "warning" ).val( "Enter a number" );
+                $( "#init-rate" ).addClass( "warning" ).val( "Enter a number" );
             } else {
                 userInput[0] = initRate;
-                $( "#initRate" ).val( "" );
+                $( "#init-rate" ).val( "" );
             }
-            initYears = $( "#initYears" ).val();
+            initYears = $( "#init-years" ).val();
             if ( isNaN( initYears ) || initYears === "" ) {
-                $( "#initYears" ).addClass( "warning" ).val( "Enter a number" );    
+                $( "#init-years" ).addClass( "warning" ).val( "Enter a number" );    
             } else {
                 userInput[1] = initYears;
-                $( "#initYears" ).val( "" );
+                $( "#init-years" ).val( "" );
             }
-            initAmount = $( "#initAmount" ).val();
+            initAmount = $( "#init-amount" ).val();
             if ( isNaN( initAmount ) || initAmount === "" ) {
-                $( "#initAmount" ).addClass( "warning" ).val( "Enter a number" );
+                $( "#init-amount" ).addClass( "warning" ).val( "Enter a number" );
             } else {
                 userInput[2] = initAmount;
-                $( "#initAmount" ).val( "" );
+                $( "#init-amount" ).val( "" );
             }
             terms = new InvestmentTerms( initRate, initYears, initAmount );
-            $( "#getMonths" ).text( terms.getMonths() );
-            $( "#getTotalInterest" ).text( terms.getTotalInterest() );
-            $( "#getYearlyInterest" ).text( terms.getYearlyInterest() );
-            $( "#getMonthlyInterest" ).text( terms.getMonthlyInterest() );
+            $( "#get-months" ).text( terms.getMonths() );
+            $( "#get-total-interest" ).text( terms.getTotalInterest() );
+            $( "#get-yearly-interest" ).text( terms.getYearlyInterest() );
+            $( "#get-monthly-interest" ).text( terms.getMonthlyInterest() );
             userInput = [];
         });
     });
