@@ -11,14 +11,9 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
-        <style type="text/css">
-        /* testing styles... */
-        .warning {
-            background-color: #e0e0e0;
-        }
-        </style>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -27,7 +22,7 @@
         <header class="main-header">
             <div class="container">
                 <hgroup>  
-                    <h1>Investment Calculator</h1>
+                    <h1>An Investment Calculator</h1>
                     <h2>An Open Source Production</h2>
                 </hgroup>
             </div> <!-- .container ends -->
@@ -37,24 +32,24 @@
                 <div class="user-input-area">
                     <h3>Investment Fields:</h3>
                     <form class="user-form">
-                        <label>Rate ( .00 ):</label>
-                        <input type="text" id="init-rate" class="user-input">
+                        <label>Amount:</label>
+                        <input type="text" id="init-amount" class="user-input" autofocus>
                         <label>Years:</label>
                         <input type="text" id="init-years" class="user-input">
-                        <label>Amount:</label>
-                        <input type="text" id="init-amount" class="user-input">
+                        <label>Rate:</label>
+                        <input type="text" id="init-rate" class="user-input">
                     </form>
-                    <input type="submit" id="submit-btn" class="submit-button">
+                    <input type="submit" id="submit-btn" value="Submit" class="submit-button medium medium-hover">
                 </div> <!-- .user-input-area ends -->
                 <aside class="output-area">
                     <h3>Investment Information:</h3>
                     <label>Investment Months:</label>
                     <span id="get-months" class="user-output"></span>
-                    <label>Total Investment Amount:</label>
+                    <label>Total Interest Earned:</label>
                     <span id="get-total-interest" class="user-output"></span>
-                    <label>Yearly Investment Amount:</label>
+                    <label>Yearly Interest Earned:</label>
                     <span id="get-yearly-interest" class="user-output"></span>
-                    <label>Monthly Investment Amount:</label>
+                    <label>Monthly Interest Earned:</label>
                     <span id="get-monthly-interest" class="user-output"></span>
                 </aside> <!-- .output-area ends -->
             </div> <!-- .container ends -->
@@ -82,7 +77,7 @@
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
         <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
+        <!--<script src="scripts/hello.js"></script>-->
         <!-- endbuild -->
 </body>
 </html>

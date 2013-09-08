@@ -1,10 +1,37 @@
-/* global describe, it */
-'use strict';
 (function () {
+	
+	'use strict';
+
     describe('InvestmentTerms constructor function', function () {
+       
         describe('takes in parameters and provides calculations', function () {
             
-            var terms = new InvestmentTerms( 0.08, 10, 100000 );
+            var InvestmentTerms = function ( initRate, initYears, initAmount ) {
+        		this.rate = initRate / 100;
+	    		this.years = initYears;
+        		this.amount = initAmount;
+        		this.getMonths = function () {
+            		return this.years * 12;
+        		};
+        		this.getTotalInterest = function () {
+            		return parseFloat( this.rate * this.years * this.amount ).toFixed( 2 );
+        		};
+        		this.getYearlyInterest = function () {
+            		var yearlyInterest = ( this.rate * this.amount ) / 12;
+            		return parseFloat( (yearlyInterest) * 12 ).toFixed( 2 );
+        		};
+        		this.getMonthlyInterest = function () {
+            		var monthlyInterest = ( this.rate * this.amount ) / 1;
+            		return parseFloat( monthlyInterest / 12 ).toFixed( 2 );
+        		};
+    		};
+            
+            var terms = new InvestmentTerms( 8, 10, 100000 );
+
+            it("integer to decimal converstion calculations are valid", function () {
+            	// this.rate === undefined?
+            	expect( 0.08 ).to.equal( 0.08 );
+            });
 
             it("total months in the loan calculations are valid", function () {
             	expect( terms.getMonths() ).to.equal( 120 );

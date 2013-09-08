@@ -3,11 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- Add a viewport -->
     <title>Mocha Spec Runner</title>
     <link rel="stylesheet" href="lib/mocha/mocha.css">
-    <!-- Incorporate SASS below... -->
-    <!--<link rel="stylesheet" type="text/css" href="sass.css">-->
     <style type="text/css">
         /* testing styles... */
         .warning {
@@ -16,46 +13,6 @@
     </style>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <hgroup>  
-                <h1>Investment Calculator</h1>
-                <h2>An Open Source Production</h2>
-            </hgroup>
-        </div> <!-- .container ends -->
-    </header> <!-- .main-header ends -->
-    <section class="main-section">
-        <div class="container">
-            <div class="user-input-area">
-                <h3>Investment Fields:</h3>
-                <form class="user-form">
-                    <label>Rate ( .00 ):</label>
-                    <input type="text" id="init-rate" class="user-input">
-                    <label>Years:</label>
-                    <input type="text" id="init-years" class="user-input">
-                    <label>Amount:</label>
-                    <input type="text" id="init-amount" class="user-input">
-                </form>
-                <input type="submit" id="submit-btn" class="submit-button">
-            </div> <!-- .user-input-area ends -->
-            <aside class="output-area">
-                <h3>Investment Information:</h3>
-                <label>Investment Months:</label>
-                <span id="get-months" class="user-output"></span>
-                <label>Total Investment Amount:</label>
-                <span id="get-total-interest" class="user-output"></span>
-                <label>Yearly Investment Amount:</label>
-                <span id="get-yearly-interest" class="user-output"></span>
-                <label>Monthly Investment Amount:</label>
-                <span id="get-monthly-interest" class="user-output"></span>
-            </aside> <!-- .output-area ends -->
-        </div> <!-- .container ends -->
-    </section> <!-- .main-section ends -->
-    <footer class="main-footer">
-        <div class="container">
-            <p>Investment Calculator | 2013</p>
-        </div> <!-- .container ends -->
-    </footer> <!-- .main-footer ends -->
     <div id="mocha"></div>
     <script src="lib/mocha/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
@@ -64,9 +21,9 @@
     <script>var expect = chai.expect</script>
     <!-- include source files here... -->
     <script src="../app/scripts/jquery.js"></script>
-    <script src="../app/scripts/main.js"></script>
+    <!--<script src="../app/scripts/main.js"></script>-->
     <!-- include spec files here... -->
-    <!--<script src="../test/spec/test.js"></script>-->
+    <script src="../test/spec/test.js"></script>
     <script>mocha.run()</script>
 </body>
 </html>
