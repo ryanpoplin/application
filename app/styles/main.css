@@ -1,0 +1,224 @@
+body {
+    background: #fafafa;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Poplin's Styles: */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.main-header {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+    padding: 20px 0 20px 0;
+    opacity: 0.75;
+    z-index: 500;
+    background-color: #202f37;
+}
+
+h1 {
+    font-size: 55px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    font-size: 33px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.main-section {
+}
+
+.user-input-area {
+    border-right: 1px solid #e0e0e0;
+    display: inline-block;
+    margin-right: 20px;
+    width: 600px;
+}
+
+.output-area {
+    display: inline-block;
+    width: 500px;
+    color: #fff;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 25px;
+    height: 30px;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    width: 340px;    
+}
+
+h3 {
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+h5 {
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 24px;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+span {
+    display: block;
+    margin: 15px 0 15px 0;
+    font-size: 25px;
+}
+
+.submit-button {
+    background: #39474e; /* background color of button */
+    color: white;
+    opacity: .85;
+    text-decoration: none;
+    font: bold 28px Arial; /* font size and style */
+    position: relative;
+        top: 0; /* anchor main button's position */
+    bottom: -12px; /* Depth of 3D effect. :after pseudo element inherits this value so it's animated in Chrome. See: kizu.ru/en/pseudos */
+        margin-bottom: 12px;
+    -moz-box-shadow: 0 -15px 5px darkred inset;
+    -webkit-box-shadow: 0 -15px 5px darkred inset;
+    box-shadow: 0 -15px 5px darkred inset;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-button, .submit-button:after {
+    display: inline-block;
+    padding: -12px 15px; /* vertical and horizontal padding of button */
+    -moz-border-radius: 8px/15px;
+    -webkit-border-radius: 8px/15px;
+    border-radius: 8px/15px;
+    outline: none;
+}
+
+.submit-button:after { /* pseudo element to construct 3D side of button */
+    content: "";
+    position: absolute;
+    padding: 0;
+    z-index: -1;
+    bottom: inherit; /* Inherit main button bottom value to animate it. See: kizu.ru/en/pseudos */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #39474e; /* background color of 3D effect */
+    -moz-box-shadow: 1px 0 3px #39474e;
+    -webkit-box-shadow: 1px 0 3px #39474e;
+    box-shadow: 1px 0 3px #39474e;
+}
+
+.submit-button:hover {
+    -moz-box-shadow: 0 25px 5px rgba(182, 64, 61, 0.7) inset;
+    -webkit-box-shadow: 0 25px 5px rgba(182, 64, 61, 0.7) inset;
+    box-shadow: 0 25px 5px rgba(182, 64, 61, 0.7) inset;
+    background: #39474e; /* background color when mouse rolls over button */
+}
+
+.submit-button:active {
+    top: 12px; /* shift button down 12px when depressed. Change 12px to match button's "bottom" property above */
+    bottom: 0;
+    -moz-box-shadow: 0 -20px 5px darkred inset, 1px 1px 2px #eee;
+    -webkit-box-shadow: 0 -20px 5px darkred inset, 1px 1px 2px #eee;
+    box-shadow: 0 -20px 5px darkred inset, 1px 1px 2px #eee;
+}
+
+
+.medium {
+    font-size: 40px;
+    line-height: 100px;
+    height: 100px;
+    width: 250px;
+    box-shadow: inset 0 -10px 0 #707070;
+    -webkit-transition: all 1 ease;
+}
+
+.submit-button:hover {
+    background: #39474e;
+    box-shadow: 0 0 3px darkred;
+    /* -webkit-transform: rotate(10deg); */
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    /* background: linear-gradient(to bottom); */
+}
+
+.submit-button:hover.medium-hover {
+    padding-top: 4px;
+}
+
+.warning {
+    background-color: #e0e0e0;
+}
+
+.main-footer {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    padding: 20px 0 20px 0;
+    opacity: 0.75;
+    text-align: center;
+    z-index: 500;
+    background-color: #202f37;
+}
+
+.container p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.container a {
+    color: #fff;
+}
