@@ -45,11 +45,32 @@ body {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 30px;
     padding: 20px 0 20px 0;
+<<<<<<< HEAD
+    opacity: 0.75;
+    z-index: 500;
+    background-color: #202f37;
+}
+
+h1 {
+    font-size: 55px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    font-size: 33px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 12px;
+=======
 }
 
 h1 {
     font-size: 45px;
     color: #0099ff;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
 
 .main-section {
@@ -65,6 +86,10 @@ h1 {
 .output-area {
     display: inline-block;
     width: 500px;
+<<<<<<< HEAD
+    color: #fff;
+=======
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
 
 input {
@@ -81,6 +106,24 @@ input[type="text"] {
 
 h3 {
     font-size: 30px;
+<<<<<<< HEAD
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+h5 {
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 24px;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+=======
     color: #0099ff;
     padding: 10px 0 10px 0;
 }
@@ -88,6 +131,7 @@ h3 {
 label {
     font-size: 20px;
     font-weight: bold;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
 
 span {
@@ -97,6 +141,66 @@ span {
 }
 
 .submit-button {
+<<<<<<< HEAD
+    background: #39474e; /* background color of button */
+    color: white;
+    opacity: .85;
+    text-decoration: none;
+    font: bold 28px Arial; /* font size and style */
+    position: relative;
+        top: 0; /* anchor main button's position */
+    bottom: -12px; /* Depth of 3D effect. :after pseudo element inherits this value so it's animated in Chrome. See: kizu.ru/en/pseudos */
+        margin-bottom: 12px;
+    -moz-box-shadow: 0 -15px 5px darkred inset;
+    -webkit-box-shadow: 0 -15px 5px darkred inset;
+    box-shadow: 0 -15px 5px darkred inset;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-button, .submit-button:after {
+    display: inline-block;
+    padding: -12px 15px; /* vertical and horizontal padding of button */
+    -moz-border-radius: 8px/15px;
+    -webkit-border-radius: 8px/15px;
+    border-radius: 8px/15px;
+    outline: none;
+}
+
+.submit-button:after { /* pseudo element to construct 3D side of button */
+    content: "";
+    position: absolute;
+    padding: 0;
+    z-index: -1;
+    bottom: inherit; /* Inherit main button bottom value to animate it. See: kizu.ru/en/pseudos */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #39474e; /* background color of 3D effect */
+    -moz-box-shadow: 1px 0 3px #39474e;
+    -webkit-box-shadow: 1px 0 3px #39474e;
+    box-shadow: 1px 0 3px #39474e;
+}
+
+.submit-button:hover {
+    -moz-box-shadow: 0 25px 5px rgba(182, 64, 61, 0.7) inset;
+    -webkit-box-shadow: 0 25px 5px rgba(182, 64, 61, 0.7) inset;
+    box-shadow: 0 25px 5px rgba(182, 64, 61, 0.7) inset;
+    background: #39474e; /* background color when mouse rolls over button */
+}
+
+.submit-button:active {
+    top: 12px; /* shift button down 12px when depressed. Change 12px to match button's "bottom" property above */
+    bottom: 0;
+    -moz-box-shadow: 0 -20px 5px darkred inset, 1px 1px 2px #eee;
+    -webkit-box-shadow: 0 -20px 5px darkred inset, 1px 1px 2px #eee;
+    box-shadow: 0 -20px 5px darkred inset, 1px 1px 2px #eee;
+}
+
+
+=======
     border-radius: 5px;
     background-color: #a0a0a0;
     color: #fefefe;
@@ -105,6 +209,7 @@ span {
     text-align: center;
 }
 
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 .medium {
     font-size: 40px;
     line-height: 100px;
@@ -115,8 +220,13 @@ span {
 }
 
 .submit-button:hover {
+<<<<<<< HEAD
+    background: #39474e;
+    box-shadow: 0 0 3px darkred;
+=======
     background: #909090;
     box-shadow: 0 0 3px #808080;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
     /* -webkit-transform: rotate(10deg); */
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -135,8 +245,24 @@ span {
     border-top: 1px solid #e0e0e0;
     margin-top: 30px;
     padding: 20px 0 20px 0;
+<<<<<<< HEAD
+    opacity: 0.75;
+    text-align: center;
+    z-index: 500;
+    background-color: #202f37;
+}
+
+.container p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.container a {
+    color: #fff;
+=======
 }
 
 .main-footer p {
     font-size: 25px;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
