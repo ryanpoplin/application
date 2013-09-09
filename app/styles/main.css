@@ -45,6 +45,7 @@ body {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 30px;
     padding: 20px 0 20px 0;
+<<<<<<< HEAD
     opacity: 0.75;
     z-index: 500;
     background-color: #202f37;
@@ -63,6 +64,13 @@ h2 {
     font-weight: bolder;
     text-align: center;
     margin-top: 12px;
+=======
+}
+
+h1 {
+    font-size: 45px;
+    color: #0099ff;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
 
 .main-section {
@@ -78,7 +86,10 @@ h2 {
 .output-area {
     display: inline-block;
     width: 500px;
+<<<<<<< HEAD
     color: #fff;
+=======
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
 
 input {
@@ -95,6 +106,7 @@ input[type="text"] {
 
 h3 {
     font-size: 30px;
+<<<<<<< HEAD
     color: #fff;
     padding: 10px 0 10px 0;
 }
@@ -111,6 +123,15 @@ label {
     font-size: 20px;
     font-weight: bold;
     color: #fff;
+=======
+    color: #0099ff;
+    padding: 10px 0 10px 0;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
 
 span {
@@ -120,6 +141,7 @@ span {
 }
 
 .submit-button {
+<<<<<<< HEAD
     background: #39474e; /* background color of button */
     color: white;
     opacity: .85;
@@ -178,6 +200,16 @@ span {
 }
 
 
+=======
+    border-radius: 5px;
+    background-color: #a0a0a0;
+    color: #fefefe;
+    margin: 15px 0 15px 0;
+    box-shadow: 0 0 3px #202020;
+    text-align: center;
+}
+
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 .medium {
     font-size: 40px;
     line-height: 100px;
@@ -188,8 +220,13 @@ span {
 }
 
 .submit-button:hover {
+<<<<<<< HEAD
     background: #39474e;
     box-shadow: 0 0 3px darkred;
+=======
+    background: #909090;
+    box-shadow: 0 0 3px #808080;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
     /* -webkit-transform: rotate(10deg); */
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -208,6 +245,7 @@ span {
     border-top: 1px solid #e0e0e0;
     margin-top: 30px;
     padding: 20px 0 20px 0;
+<<<<<<< HEAD
     opacity: 0.75;
     text-align: center;
     z-index: 500;
@@ -221,4 +259,10 @@ span {
 
 .container a {
     color: #fff;
+=======
+}
+
+.main-footer p {
+    font-size: 25px;
+>>>>>>> 7c4ea73e141722525d8c497a281129ae19285b6a
 }
