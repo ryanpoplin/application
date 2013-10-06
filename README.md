@@ -10,4 +10,4 @@ Ryan Poplin:
 
 Caleb Bradley:
 
-- ( Add your contributions here... ).
+- Focused on Design.
